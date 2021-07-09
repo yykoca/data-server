@@ -11,7 +11,7 @@ db.once("open", async function () {
 
   await user.save(function (err, user) {
     if (err) return console.error(err, `user: ${user} could not be saved!`);
-    console.log(`User saved.`);
+    console.log(`User saved: ${user}`);
   });
   
   db.close();
